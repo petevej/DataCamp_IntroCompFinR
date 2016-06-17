@@ -16,7 +16,6 @@ $\pagebreak$
 * **Data loading**
     * Assign the URL to the CSV file: `data_url <- "http://assets.datacamp.com/course/compfin/sbuxPrices.csv"`
     * Load the data fram using read.csv: `sbux_df <- read.csv(data_url, header = TRUE, stringsAsFactors = FALSE)`
-
     * 1998 version 4 (what we use today)
     * active user community and ***FREE*** (4 freedoms)
          * freedom to run the program
