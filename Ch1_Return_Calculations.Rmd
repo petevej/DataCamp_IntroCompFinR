@@ -12,44 +12,17 @@ output:
 ---
 $\pagebreak$
 
-## Overview and History of R
-* **R** = dialect of the **S** language
-    * S was developed by John Chambers @ Bell Labs
-    * initiated in 1976 as internal tool, originally FORTRAN libraries
-    * 1988 rewritten in C (version 3 of language)
+## Loading and plotting the time series data
+* **Data loading**
+    * Assign the URL to the CSV file: `data_url <- "http://assets.datacamp.com/course/compfin/sbuxPrices.csv"`
+    * Load the data fram using read.csv: `sbux_df <- read.csv(data_url, header = TRUE, stringsAsFactors = FALSE)`
+
     * 1998 version 4 (what we use today)
-* **History of S**
-    * Bell labs $\rightarrow$ insightful $\rightarrow$ Lucent $\rightarrow$ Alcatel-Lucent
-    * in 1998, S won the Association for computing machinery’s software system award
-* **History of R**
-    * 1991     created in New Zealand by Ross Ihaka & RobertGentleman
-    * 1993     first announcement of R to public
-    * 1995     Martin Machler convinces founders to use GNU General Public license to make R free
-    * 1996     public mailing list created R-help and R-devel
-    * 1997     R Core Group formed
-    * 2000     R v1.0.0 released
-* **R Features**
-    * Syntax similar to S, semantics similar to S, runs on any platforms, frequent releasees
-    * lean software, functionalities in modular packages, sophisticated graphics capabilities
-    * useful for interactive work, powerful programming language
     * active user community and ***FREE*** (4 freedoms)
          * freedom to run the program
          * freedom to study how the program works and adapt it
          * freedom to redistribute copies
          * freedom to improve the program
-* **R Drawbacks**
-    * 40 year-old technology
-    * little built-in support for dynamic/3D graphics
-    * functionality based on consumer demand
-    * objects generally stored in physical memory (limited by hardware)
-* **Design of the R system**
-    * 2 conceptual parts: base R from CRAN vs. everything else
-    * functionality divided into different packages
-         * **base R** contains core functionality and fundamental functions
-         * other utility packages included in the base install: `util`, `stats`, `datasets`, ...
-         * Recommended packages: `bootclass`, `KernSmooth`, etc
-    * 5000+ packages available
-
 $\pagebreak$
 
 ## Coding Standards
